@@ -122,3 +122,14 @@ export const forceUpdateAuthority = (authority) => {
         authority: authority,
     }
 }
+
+
+
+//#####################################################
+
+export const GetData = (data) => {
+    return {
+        type: actionTypes.GetData,
+        data: data,
+    }
+}

@@ -601,3 +601,33 @@ export const getAuthorityForceUser = (props) => {
 
 };
 
+
+//##############################################################""
+
+
+export const getData = (props) => {
+    return (next) => {
+        let config = {
+            headers: {
+                authorization: "Bearer: " + props.user.token,
+                Username: props.user.username
+            }
+        }
+
+        axios.get(Url + '/GetData', config
+
+        )
+            .then((response) => {
+                console.log("okkkkkkkkkk");
+                console.log(response.data);
+                next(actionCreators.getData(response.data));
+
+            })
+            .catch((error) => {
+                console.log(error);
+                console.log("error on get data ");
+            });
+
+    }
+
+};

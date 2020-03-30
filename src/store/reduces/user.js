@@ -19,6 +19,7 @@ if (initialUserState == undefined || initialUserState == null) {
         keyWait: false,
         users: [],
         notifications: [],
+        data=[],
 
     };
 
@@ -74,6 +75,8 @@ const reducer = (state = initialUserState, action) => {
             return updateObject(state, { motorStatus: action.status })
         case actionTypes.forceUpdateAuthority:
             return updateObject(state, { authority: action.authority })
+        case actionTypes.GetData:
+            return updateObject(state, { data: action.data })
 
     }
     return state;

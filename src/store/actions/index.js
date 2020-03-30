@@ -16,6 +16,7 @@ export {
     getAllNotifications,
     requestForgetPassword,
     forceUpdateAuthority,
+    GetData,
 
 } from './authenticate/ayscnActions/authAsyActions'
 
@@ -42,5 +43,6 @@ export {
     requestForgetPasswordProcess,
     requestUpdateForgetPasswordProcess,
     getAuthorityForceUser,
+    getData,
 
 } from './authenticate/noasycnActions/authNoAsyActions'

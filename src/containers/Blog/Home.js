@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Url } from '../../properties/properties';
 import * as actionCreators from '../../store/actions/index';
 
 
@@ -18,9 +19,6 @@ class Home extends Component {
         );
     }
 }
-
-export default Home;
-
 
 
 const mapStateToProps = state => {
@@ -44,4 +42,4 @@ const mapDispatchToProps = dispatch => {
 
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Notification);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

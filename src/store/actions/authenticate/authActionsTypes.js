@@ -17,3 +17,6 @@ export const waitMotor = "waitMotor";
 export const getMotorStatus = "getMotorStatus";
 export const requestForgetPassword = "requestForgetPassword";
 export const forceUpdateAuthority = "forceUpdateAuthority";
+
+//############################################"""
+export const GetData = "GetData"

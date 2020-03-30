@@ -620,7 +620,7 @@ export const getData = (props) => {
             .then((response) => {
                 console.log("okkkkkkkkkk");
                 console.log(response.data);
-                next(actionCreators.getData(response.data));
+                next(actionCreators.GetData(response.data));
 
             })
             .catch((error) => {

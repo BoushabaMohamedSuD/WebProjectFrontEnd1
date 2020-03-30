@@ -19,7 +19,7 @@ if (initialUserState == undefined || initialUserState == null) {
         keyWait: false,
         users: [],
         notifications: [],
-        data=[],
+        data: [],
 
     };
 

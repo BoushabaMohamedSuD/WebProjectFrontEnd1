@@ -17,20 +17,24 @@ class Home extends Component {
         return (
             <div>
                 {
-                    this.props.user.data != undefined ?
+                    this.props.user.data[0] != undefined ?
                         <div className={css.panel}>
 
                             {
-                                this.props.user.data.DATA
+                                this.props.user.data.map(data => (
 
-                            }
-                            {
-                                this.props.user.data.ASEDS
+                                    /*<div>
+                                        <p>{data.Nom}</p>
+                                        <p>{data.Description}</p>
+                                    </div>*/
+                                    < DetailedExpansionPanel
 
-                            }
-                            {
-                                this.props.user.data.SUD
+                                        username={data.Nom}
+                                        message={data.Description}
+                                        imageUrl={Url + "/images/Mohamed.png"}
+                                    ></DetailedExpansionPanel>
 
+                                ))
                             }
                         </div>
                         :
